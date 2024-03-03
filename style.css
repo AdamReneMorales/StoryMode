@@ -166,7 +166,7 @@ h2 {
 
     .container-author-edit {
         gap: 20px;
-        grid-template-columns: 100%;
+        grid-template-columns: auto;
         grid-template-rows: 200px minmax(500px, auto) repeat(4, minmax(300px, auto));
         width: 100%;
     }
