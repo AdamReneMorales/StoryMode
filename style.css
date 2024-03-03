@@ -10,7 +10,7 @@
 }
 
 .banner {
-    grid-column: span 2;
+    grid-column: span 3;
     background-color: #8a5454;
 }
 
@@ -19,9 +19,12 @@ h1 {
     top: 35%;
     left:10%;
     font-size: 50px;
+    
     margin: 0;
     color: white;
 }
+
+/*Home Page*/
 
 .left-section {
     display: flex;
@@ -72,12 +75,100 @@ h1 {
     font-style: normal;
 }
 
+/*Author Edit Page*/
+
+.container-author-edit {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px minmax(300px, auto) minmax(300px, auto);
+    width: 100%;
+}
+
+.personal-info-edit {
+    grid-row: span 2;
+    background-color: #d9d9d9;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.stories-list-edit {
+    background-color: #d9d9d9;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.locations-list-edit {
+    background-color: #d9d9d9;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.characters-list-edit {
+    background-color: #d9d9d9;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.collab-list-edit {
+    background-color: #d9d9d9;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+img {
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.personal-info, .edit-personal-info{
+    list-style: none;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+}
+
+.personal-info > li, .edit-personal-info > li {
+    margin: 10px;
+}
+
+h2 {
+    position: relative;
+    left: 20px;
+}
+
+.edit-link {
+    font-size: 20px;
+    text-align: right;
+    position: relative;
+    top: 30px;
+    left: -20px;
+}
+
 @media (max-width: 1000px) {
     .container {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 200px 1fr 1fr;
         font-size: 14px
+    }
+
+    .container-author-edit {
+        gap: 20px;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px minmax(500px, auto) repeat(4, minmax(300px, auto));
+        width: 100%;
     }
 
     .left-section > p {
@@ -93,6 +184,11 @@ h1 {
     .banner {
         grid-column: span 1;
         background-color: #8a5454;
+    }
+
+    .personal-info-edit {
+        grid-row: span 1;
+        background-color: #d9d9d9;
     }
 
 }
