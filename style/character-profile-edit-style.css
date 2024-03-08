@@ -1,0 +1,203 @@
+/*Character Profile Edit Page*/
+
+.container-character-profile-edit {
+    display: grid;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 600px 600px 600px auto;
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    grid-column: span 3;
+    background-color: #8a5454;
+}
+
+h1 {
+    position: relative;
+    top: 35%;
+    left:10%;
+    font-size: 50px;
+    margin: 0;
+    color: white;
+}
+
+h3 {
+    margin-left: 5%;
+
+}
+
+.section-heading {
+    grid-column: span 2;
+    text-align: center;
+}
+
+input {
+    height: 40%;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.character-basic-edit {
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.character-photo-edit {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.photo-form {
+    margin: 10%;
+}
+
+.photo-btn-edit {
+    margin-top: 15%;
+    background-color: #8a5454;
+    color: white;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    height: 200px;
+}
+
+.dropdowns-basic-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    margin-top: 10%
+}
+
+select {
+    height: 50%;
+    margin-top: 5%;
+    width: 50%
+}
+
+
+.character-demographic-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.character-appearance-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.character-history-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.character-psycho-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.character-communication-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.character-extra-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.character-relationship-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.character-growth-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    background-color: #d9d9d9;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.submit-changes-character {
+    grid-column: span 3;
+    text-align: center;
+}
+
+.submit-all-btn {
+    height: 150%;
+    width: 25%;
+    background-color: #8a5454;
+    color: white;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 1000px) {
+    .container-character-profile-edit {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 200px repeat(9, 300px) auto;
+
+    }
+
+    .banner {
+        display: flex;
+        grid-column: span 1;
+        background-color: #8a5454;
+    }
+
+    .submit-changes-character {
+        grid-column: span 1;
+    }
+    
+}

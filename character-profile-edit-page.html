@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/character-profile-edit-style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-character-profile-edit">
+        <div class="banner">
+            <h1>StoryMode</h1>
+        </div>
+        <div class="character-basic-edit">
+            <div class="character-photo-edit">
+                <img src="./assets/Steamboat-willie.jpg"/>
+                <form class="photo-form">
+                    <button class="photo-btn-edit" type="file" id="myFile" name="filename">Browse...</button>
+                    <br/>
+                    <button class="photo-btn-edit" type="submit">Upload</button>
+                </form>               
+            </div>
+            <div class="dropdowns-basic-edit">
+                <h3>Stories:</h3>
+                <select class="stories-select" name="stories" id="stories">
+                    <option value="one">Story 1</option>
+                    <option value="two">Story 2</option>
+                    <option value="three">Story 3</option>
+                    <option value="four">Story 4</option>
+                </select>
+                <h3>Type of Character:</h3>
+                <select name="type" id="type">
+                    <option value="one">Human</option>
+                    <option value="two">Magical</option>
+                    <option value="three">Super Powered</option>
+                    <option value="four">Other</option>
+                </select>
+                <h3>Alignment:</h3>
+                <select name="align" id="align">
+                    <option value="one">Hero</option>
+                    <option value="two">Villain</option>
+                    <option value="three">Neutral</option>
+                    <option value="four">Anti-hero</option>
+                </select>
+                <h3>Role:</h3>
+                <select name="role" id="role">
+                    <option value="one">Main Character</option>
+                    <option value="two">Side Character</option>
+                </select>
+            </div>
+        </div>
+        <div class="character-demographic-edit">
+            <h2 class="section-heading">Demographics</h2>
+            <h3 class="margin-edit">Name:</h3>
+            <input type="text" id="name" name="name"/>
+            <h3 class="margin-edit">Age:</h3>
+            <input type="text" id="age" name="age"/>
+            <h3 class="margin-edit">Gender:</h3>
+            <input type="text" id="gender" name="gender"/>
+            <h3 class="margin-edit">Occupation:</h3>
+            <input type="text" id="occupation" name="occupation"/>
+            <h3 class="margin-edit">Ethnicity:</h3>
+            <input type="text" id="ethnicity" name="ethnicity"/>
+            <h3 class="margin-edit">Socioeconomic Status:</h3>
+            <input type="text" id="socioeconomic-status" name="socioeconomic-status"/>
+            <h3 class="margin-edit">Education:</h3>
+            <input type="text" id="education" name="education"/>
+        </div>
+        <div class="character-appearance-edit">
+            <h2 class="section-heading">Physical Appearance</h2>
+            <h3 class="margin-edit">Eye Color:</h3>
+            <input type="text" id="eye" name="eye"/>
+            <h3 class="margin-edit">Skin Color:</h3>
+            <input type="text" id="skin" name="skin"/>
+            <h3 class="margin-edit">Hair Color:</h3>
+            <input type="text" id="hair" name="hair"/>
+            <h3 class="margin-edit">Height:</h3>
+            <input type="text" id="height" name="height"/>
+            <h3 class="margin-edit">Weight:</h3>
+            <input type="text" id="weight" name="weight"/>
+            <h3 class="margin-edit">Body Type:</h3>
+            <input type="text" id="body" name="body"/>
+            <h3 class="margin-edit">Fitness Level:</h3>
+            <input type="text" id="fitness" name="fitness"/>
+            <h3 class="margin-edit">Tattoos:</h3>
+            <input type="text" id="tattoos" name="tattoos"/>
+            <h3 class="margin-edit">Scars:</h3>
+            <input type="text" id="scars" name="scars"/>
+            <h3 class="margin-edit">Disabilities:</h3>
+            <input type="text" id="disabilities" name="disabilities"/>
+            <h3 class="margin-edit">Fashion Style:</h3>
+            <input type="text" id="style" name="style"/>
+            <h3 class="margin-edit">Accessories/ Weapons:</h3>
+            <input type="text" id="accessories" name="accessories"/>
+            <h3 class="margin-edit">Cleanliness/ Grooming:</h3>
+            <input type="text" id="hygiene" name="hygiene"/>
+            <h3 class="margin-edit">Posture:</h3>
+            <input type="text" id="posture" name="posture"/>
+            <h3 class="margin-edit">Tics:</h3>
+            <input type="text" id="tics" name="tics"/>
+            <h3 class="margin-edit">Extra Body Parts:</h3> <!--Aliens, Magical, Super Powered, Other-->
+            <input type="text" id="extra" name="extra"/>
+        </div>
+        <div class="character-history-edit">
+            <h2 class="section-heading">History</h2>
+            <h3 class="margin-edit">Birth Date:</h3>
+            <input type="text" id="birth" name="birth"/>
+            <h3 class="margin-edit">Place of Origin:</h3>
+            <input type="text" id="origin" name="origin"/>
+            <h3 class="margin-edit">Key Family Members:</h3>
+            <input type="text" id="family" name="family"/>
+            <h3 class="margin-edit">Criminal Record:</h3>
+            <input type="text" id="criminal" name="criminal"/>
+            <h3 class="margin-edit">Affiliations:</h3>
+            <input type="text" id="affiliations" name="affiliations"/>
+            <h3 class="margin-edit">Secrets:</h3>
+            <input type="text" id="secrets" name="secrets"/>
+            <h3 class="margin-edit">Origin of Powers:</h3> <!--Aliens, Super Powered, Other-->
+            <input type="text" id="p-origin" name="p-origin"/>
+            <h3 class="margin-edit">Origin of Magic:</h3> <!--Magical, Other-->
+            <input type="text" id="m-origin" name="m-origin"/>
+        </div>
+        <div class="character-psycho-edit">
+            <h2 class="section-heading">Psychological Traits</h2>
+            <h3 class="margin-edit">Personality Type:</h3>
+            <input type="text" id="personality" name="personality"/>
+            <h3 class="margin-edit">Personality Traits:</h3>
+            <input type="text" id="p-traits" name="p-traits"/>
+            <h3 class="margin-edit">Temperament:</h3>
+            <input type="text" id="temperament" name="temperament"/>
+            <h3 class="margin-edit">Mannerisms:</h3>
+            <input type="text" id="mannerisms" name="mannerisms"/>
+            <h3 class="margin-edit">Intelligence:</h3>
+            <input type="text" id="intelligence" name="intelligence"/>
+            <h3 class="margin-edit">Self-esteem:</h3>
+            <input type="text" id="self-esteem" name="self-esteem"/>
+            <h3 class="margin-edit">Hobbies:</h3>
+            <input type="text" id="hobbies" name="hobbies"/>
+            <h3 class="margin-edit">Skills:</h3>
+            <input type="text" id="skills" name="skills"/>
+            <h3 class="margin-edit">Loves:</h3>
+            <input type="text" id="loves" name="loves"/>
+            <h3 class="margin-edit">Morality:</h3>
+            <input type="text" id="morality" name="morality"/>
+            <h3 class="margin-edit">Phobias:</h3>
+            <input type="text" id="phobias" name="phobias"/>
+            <h3 class="margin-edit">Bad habits:</h3>
+            <input type="text" id="b-habbits" name="b-habbits"/>
+            <h3 class="margin-edit">Desires:</h3>
+            <input type="text" id="desires" name="desires"/>
+            <h3 class="margin-edit">Flaws:</h3>
+            <input type="text" id="flaws" name="flaws"/>
+            <h3 class="margin-edit">Quirks:</h3>
+            <input type="text" id="quirks" name="quirks"/>
+            <h3 class="margin-edit">Favorite Sayings:</h3>
+            <input type="text" id="sayings" name="sayings"/>
+            <h3 class="margin-edit">Regrets:</h3>
+            <input type="text" id="regrets" name="regrets"/>
+            <h3 class="margin-edit">Accomplishments:</h3>
+            <input type="text" id="accomplishments" name="accomplishments"/>
+        </div>
+        <div class="character-communication-edit">
+            <h2 class="section-heading">Communication</h2>
+            <h3 class="margin-edit">Languages:</h3>
+            <input type="text" id="languages" name="languages"/>
+            <h3 class="margin-edit">Accent:</h3>
+            <input type="text" id="accent" name="accent"/>
+            <h3 class="margin-edit">Style of Speech:</h3>
+            <input type="text" id="speech" name="speech"/>
+            <h3 class="margin-edit">Pitch:</h3>
+            <input type="text" id="pitch" name="pitch"/>
+            <h3 class="margin-edit">Laughter:</h3>
+            <input type="text" id="laughter" name="laughter"/>
+            <h3 class="margin-edit">Smile:</h3>
+            <input type="text" id="smile" name="smile"/>
+            <h3 class="margin-edit">Gestures:</h3>
+            <input type="text" id="gestures" name="gestures"/>
+        </div>
+        <div class="character-extra-edit">
+            <h2 class="section-heading">Strengths</h2>
+            <h3 class="margin-edit">Physical Strengths:</h3>
+            <input type="text" id="p-strengths" name="p-strengths"/>
+            <h3 class="margin-edit">Intellectual Strengths:</h3>
+            <input type="text" id="i-strengths" name="i-strengths"/>
+            <h3 class="margin-edit">Interpersonal Strengths:</h3>
+            <input type="text" id="ip-strengths" name="ip-strengths"/>
+            <br/>
+            <h2 class="section-heading">Weaknesses</h2>
+            <h3 class="margin-edit">Physical Weaknesses:</h3>
+            <input type="text" id="p-weaknesses" name="p-weaknesses"/>
+            <h3 class="margin-edit">Intellectual Weaknesses:</h3>
+            <input type="text" id="i-weaknesses" name="i-weaknesses"/>
+            <h3 class="margin-edit">Interpersonal Weaknesses:</h3>
+            <input type="text" id="ip-weaknesses" name="ip-weaknesses"/>
+            <br/>
+            <h2 class="section-heading">Abilities</h2>
+            <h3 class="margin-edit">Physical Abilities:</h3>
+            <input type="text" id="p-abilities" name="p-abilities"/>
+            <h3 class="margin-edit">Magical Abilities:</h3><!--Magical, Other-->
+            <input type="text" id="m-abilities" name="m-abilities"/>
+            <h3 class="margin-edit">Super Powers:</h3><!--Aliens, Super Powered, Other-->
+            <input type="text" id="powers" name="powers"/>
+        </div>
+        <div class="character-relationship-edit">
+            <h2 class="section-heading">Relationships</h2>
+            <h3 class="margin-edit">Allies:</h3>
+            <input type="text" id="allies" name="allies"/>
+            <h3 class="margin-edit">Spouse/Lover:</h3>
+            <input type="text" id="lover" name="lover"/>
+            <h3 class="margin-edit">Parents/Guardians:</h3>
+            <input type="text" id="parents" name="parents"/>
+            <h3 class="margin-edit">Children:</h3>
+            <input type="text" id="children" name="children"/>
+            <h3 class="margin-edit">Grandparents:</h3>
+            <input type="text" id="grandparents" name="grandparents"/>
+            <h3 class="margin-edit">Grandchildren:</h3>
+            <input type="text" id="grandchildren" name="grandchildren"/>
+            <h3 class="margin-edit">Other Family:</h3>
+            <input type="text" id="family" name="family"/>
+            <h3 class="margin-edit">Pets:</h3>
+            <input type="text" id="pets" name="pets"/>
+            <h3 class="margin-edit">Friends:</h3>
+            <input type="text" id="friends" name="friends"/>
+            <h3 class="margin-edit">Enemies:</h3>
+            <input type="text" id="enemies" name="enemies"/>
+            <h3 class="margin-edit">Mentors:</h3>
+            <input type="text" id="mentors" name="mentors"/>
+            <h3 class="margin-edit">Idols:</h3>
+            <input type="text" id="idols" name="idols"/>
+            <h3 class="margin-edit">Followers:</h3>
+            <input type="text" id="followers" name="followers"/>
+            <h3 class="margin-edit">Organizations:</h3>
+            <input type="text" id="organizations" name="organizations"/>
+            <h3 class="margin-edit">Social Media Presence:</h3>
+            <input type="text" id="sm-presence" name="sm-presence"/>
+            <h3 class="margin-edit">Public Perception:</h3>
+            <input type="text" id="p-perception" name="p-perception"/>
+        </div>
+        <div class="character-growth-edit">
+            <h2 class="section-heading">Character Growth</h2>
+            <h3 class="margin-edit">Character Archetype:</h3>
+            <input type="text" id="archetype" name="archetype"/>
+            <h3 class="margin-edit">Character Arc:</h3>
+            <input type="text" id="arc" name="arc"/>
+            <h3 class="margin-edit">Core Values:</h3>
+            <input type="text" id="values" name="values"/>
+            <h3 class="margin-edit">Internal Conflicts:</h3>
+            <input type="text" id="i-conflicts" name="i-conflicts"/>
+            <h3 class="margin-edit">External Conflicts:</h3>
+            <input type="text" id="e-conflicts" name="e-conflicts"/>
+            <h3 class="margin-edit">Goals:</h3>
+            <input type="text" id="goals" name="goals"/>
+            <h3 class="margin-edit">Motivations:</h3>
+            <input type="text" id="motivations" name="motivations"/>
+            <h3 class="margin-edit">Epiphanies:</h3>
+            <input type="text" id="epiphanies" name="epiphanies"/>
+            <h3 class="margin-edit">Signicant Events/Plot Points:</h3>
+            <input type="text" id="events" name="events"/>
+        </div>
+        <form class="submit-changes-character">
+            <button class="submit-all-btn" type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
